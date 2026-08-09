@@ -109,14 +109,6 @@ export const experience: Experience[] = [
     description:
       "Organized IT inventory and provided helpdesk support to multiple locations across Louisiana. Collaborated with marketing and operations to keep a stable environment. Took over website design, working with marketing to ensure the company's vision was captured and displayed appropriately online.",
   },
-  {
-    period: "2022 - 2023",
-    role: "Lead IT Technician",
-    company: "Anytime IT Solutions",
-    location: "Baton Rouge, LA",
-    description:
-      "Handled daily tickets for multiple clients and installed/supported switches, computers, cameras, and phone systems. Performed A/V installations for residential and commercial customers. Substantially improved the organization of the office and the company's fleet of vehicles.",
-  },
 ]
 
 export const education: Education[] = [
