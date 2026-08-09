@@ -1,0 +1,50 @@
+.contact__heading {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 24px;
+  margin: 12px 0 16px;
+}
+
+.contact__intro {
+  color: var(--text-secondary);
+  max-width: 520px;
+  margin-bottom: 40px;
+}
+
+.contact__card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  max-width: 520px;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.contact__row {
+  display: flex;
+  gap: 12px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.contact__row:last-child {
+  border-bottom: none;
+}
+
+.contact__key {
+  color: var(--text-muted);
+  min-width: 90px;
+  flex-shrink: 0;
+}
+
+.contact__value {
+  color: var(--text-primary);
+}
+
+.contact__social {
+  display: flex;
+  gap: 28px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+}

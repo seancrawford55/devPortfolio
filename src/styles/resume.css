@@ -1,0 +1,113 @@
+.resume__heading {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 24px;
+  margin: 12px 0 40px;
+}
+
+.resume__block {
+  margin-bottom: 56px;
+}
+
+.resume__subheading {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--accent);
+  margin: 0 0 20px;
+}
+
+.cards {
+  display: grid;
+  gap: 24px;
+}
+
+.entry-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
+  gap: 32px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+}
+
+.entry-card__period {
+  color: var(--accent);
+  font-size: 13px;
+}
+
+.entry-card__role {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 17px;
+  margin: 8px 0 4px;
+}
+
+.entry-card__company {
+  color: var(--text-primary);
+  font-size: 15px;
+}
+
+.entry-card__location {
+  color: var(--text-muted);
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.entry-card__desc {
+  color: var(--text-secondary);
+  font-size: 15px;
+  margin: 0;
+}
+
+.skill-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+}
+
+.skill-group {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+}
+
+.skill-group__heading {
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 16px;
+}
+
+.skill-group__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-group__list li {
+  font-size: 14px;
+  color: var(--text-secondary);
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 4px 12px;
+}
+
+@media (max-width: 700px) {
+  .entry-card {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .skill-groups {
+    grid-template-columns: 1fr;
+  }
+}
