@@ -3,14 +3,6 @@ export interface SpecRow {
   value: string
 }
 
-export interface Project {
-  title: string
-  description: string
-  link?: string
-  linkLabel?: string
-  tags: string[]
-}
-
 export interface Experience {
   period: string
   role: string
@@ -67,21 +59,6 @@ export const contactRows: ContactRow[] = [
     href: "mailto:SPCrawford317@gmail.com",
   },
   { key: "location", value: "Ridley Park, PA" },
-]
-
-export const projects: Project[] = [
-  {
-    title: "Portfolio Website",
-    description:
-      "Multi-page personal portfolio that is built with Vanilla Typescript. Calling Github API to showcase activity and latest repos",
-    tags: ["HTML", "CSS", "Typescript"],
-  },
-  {
-    title: "Contact Book",
-    description:
-      "A rolodex type Command Line interactive program that uses Vector storage to use Structs and Enums in order to hold contact info and access the different aspects of each entry.",
-    tags: ["Rust", "CLI"],
-  },
 ]
 
 export const experience: Experience[] = [

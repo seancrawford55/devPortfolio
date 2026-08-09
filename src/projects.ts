@@ -1,28 +1,9 @@
 import { initLayout } from "./layout"
-import { projects } from "./data"
 import { fetchEvents, fetchRepos, GITHUB_USERNAME, type GitHubEvent, type GitHubRepo } from "./github"
 import "./styles/base.css"
 import "./styles/projects.css"
 
 initLayout()
-
-const grid = document.querySelector<HTMLElement>("[data-projects]")
-if (grid) {
-  grid.innerHTML = projects
-    .map(
-      (project) => `
-        <article class="project-card">
-          <div class="project-card__body">
-            <div class="project-card__tags mono">
-              ${project.tags.map((tag) => `<span>${tag}</span>`).join("")}
-            </div>
-            <h3 class="project-card__title">${project.title}</h3>
-            <p class="project-card__desc">${project.description}</p>
-          </div>
-        </article>`,
-    )
-    .join("")
-}
 
 const GITHUB_PROFILE = `https://github.com/${GITHUB_USERNAME}`
 const controller = new AbortController()
